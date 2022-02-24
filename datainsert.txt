@@ -1,0 +1,127 @@
+Customer_GID_Opt_in_pc
+Is_Active_Users_On_Account_pc
+c2g__CollectionsCommunicatContact__pc
+IS_Address_Copied__pc,
+Email_Distribution__pc,
+Active_Docebo_User__pc,
+						Parent
+DRAD_LOOKUP__C - a2id000000IL5oWAAT ->drad  -> CONTACT_OWNER__C
+C2G__CODADEFAULTEXPENSEACCOUNT__C -  a4Md0000000dWUzEAM ->	generalledgeAccount
+C2G__CODAACCOUNTSPAYABLECONTROL__C - a4Md0000000dWUzEAM -> >	generalledgeAccount
+WRITING_COMPANY__C -0013f000005pbsqAAA   ->
+FF_COMPANY__C -a42d0000001Q7YOAA0 ->Accounting Company
+
+parent create -
+
+
+
+
+a2id000000IL5oW
+RECORDTYPEID-a2id000000IL5oWAAT
+
+
+
+
+
+
+
+Second Account - 1/17/2022, 1/1/1978, 10/2/2022
+
+SELECT ID,NAME, Billing_Type__c,Writing_Company__c,Finance_Writing_Company__c,NA_Auto_Business_Type__c FROM ACCOUNT
+where NA_Auto_Business_Type__c='First Extended' AND Billing_Type__c='Corporate Group' limit 5
+
+https://twgservice--twgqa1d.my.salesforce.com/0010V00002KZuw7QAD
+BillingStatement - a0D5C0000027ifJ
+SalesInvoice - 	
+Portfolio General Management Group
+C2G__CODADEFAULTEXPENSEACCOUNT__C - a4Md0000000dWUzEAM
+C2G__CODAACCOUNTSPAYABLECONTROL__C -a4Md0000000dWUzEAM
+C2G__CODAACCOUNTSRECEIVABLECONTROL__C -a4Md0000000dWV4EAM
+
+WRITING_COMPANY__C - 0010V00002JC16DQAT -> Account
+BILLING_STATEMENT__C - a0D5C000001kW0KUAU
+FF_COMPANY__C -a42d0000001Q7YOAA0
+
+RecordTypeId - 012d0000001gxpHAAQ
+
+https://twgservice--twgqa1d.lightning.force.com/lightning/r/c2g__codaCompany__c/a42d0000001Q7YOAA0/view
+IS_NO_ACTIVE_USERS_ON_ACCOUNT__C
+
+CSR - PROFILE   r, w
+BillingStatment
+Profile SystemAdmin 
+r	c
+
+select id, Client__c, Client__r.Name, RD_Transaction__c, Accounting_Action__c, Accounting_Action__r.Name,Client__r.Billing_Type__c , RD_Transaction__r.Accounting_Action__c, RD_Transaction__r.Action_Code__c, RD_Transaction__r.Accounting_Action__r.Name from Billing_Item__c Where Client__r.Billing_Type__c='Corporate group installment'
+else if(field == AMOUNT) {	
+                         if(billingItem.Client__r.Billing_Type__c.equals('Corporate group installment')){
+                      		recordValues.add(String.valueOf(clientidVsAmountMap.get(key)));  
+                    }
+                    else {
+                         recordValues.add(String.valueOf(billingItem.Amount__c));
+                    }
+ 
+                } else if(field == COUNT) {
+                    	if(billingItem.Client__r.Billing_Type__c.equals('Corporate group installment')){
+                            Integer count = clientIdVSCountMap.get(key);
+                            if(count == 0) {
+                                count = clientIdVSCountMap.get(key);
+                            }
+                            recordValues.add(String.valueOf(count));
+                       }
+
+
+
+
+
+
+
+
+
+
+
+Third Account - 
+Account - 001d000001R7Bg4AAF
+BillingStatment - a0D5C0000027k3m
+C2G__CODADEFAULTEXPENSEACCOUNT__C - 
+C2G__CODAACCOUNTSPAYABLECONTROL__C -
+C2G__CODAACCOUNTSRECEIVABLECONTROL__C -
+
+WRITING_COMPANY__C -> Account
+
+FF_COMPANY__C -a42d0000001Q7YOAA0
+
+
+
+
+AutoNative
+
+
+FF_COMPANY__C - a42d0000001Q7YOAA0 -> yes
+WRIRING_COMPANY__C - 0010V00002QA1cNQAT -> yes
+C2G__CODAACCOUNTSPAYABLECONTROL__C-a4Md0000000dWUzEAM -> yes
+C2G__CODAACCOUNTSRECEIVABLECONTROL__C -a4Md0000000dWV4EAM
+C2G__CODADEFAULTEXPENSEACCOUNT__C-a4Md0000000dWUzEAM-> yes
+CC_LOOKUP__C - aAJ3f000000CaRiGAK
+BILLINGStatement - a0D5C000001kiLoUAI
+
+
+
+
+https://twgservice--bpdev3.my.salesforce.com/a0D050000017eqM
+
+https://twgservice--bpdev3.my.salesforce.com/secur/frontdoor.jsp?sid=00D050000008pAdEAI!ASAAQJ88SE3M3_5KvMlMC4UPxbL_KbMSW8Iva9PkfgQerpSMxzOSQOoR9QxHSTulA3UbOtXngUN4uX.A0C8w55iocO4LW6cX
+
+
+
+SALES_INVOICE
+CLIENT_NUMBER
+CLIENT
+TYPE
+ATM_TRANSACTION_NUMBER
+ACCOUNTING_ACTION_CODE
+CHECK_NUMBER
+
+
+select id, Client__c,  Client__r.Name, RD_Transaction__c, Accounting_Action__c, Accounting_Action__r.Name,Client__r.Billing_Type__c , RD_Transaction__r.Accounting_Action__c, RD_Transaction__r.Action_Code__c, RD_Transaction__r.Accounting_Action__r.Name from Billing_Item__c Where Client__r.Billing_Type__c ='corporate group installment'  
+
